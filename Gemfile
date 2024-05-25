@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+¡source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.2.4"
@@ -38,3 +38,12 @@ end
 
 # Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
 #gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+
+app/controllers/application_controller.rb
+
+class ApplicationController < ActionController::Base
+
+  def hello
+    render html: "hello, world!"
+  end
+end
